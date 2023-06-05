@@ -19,16 +19,32 @@
 2 Unix Commands (11 pts)
 For each part, write the relevant command:
 (a) list files in the parent directory
+	ls
 	
 (b) change the current directory to the home directory’s user1 directory
+	cd~/user1
+
 (c) delete the non-empty directory dir (Note: rmdir only works on empty directories)
+	rm -r dir
 (d) move a directory subdir1 in dir1 to subdirectory dir2/subdir3
+	mv dir/subdir1 /dir2/subdir3
+
 (e) (one command) move all C files in directory dir1 to dir2
+	mv dir1/*dir2
+
 (f) (one command) print the contents of all C files in current directory to the screen
+	cat*
+
 (g) (one command) change the file owner of file1 to root and group to staff
+	chown root:staf file1
 (h) change the file permissions of file2 to be read-only to everyone
+	chmod 444 file2
+
 (i) change the file permissions of file3 to be executable by owner, writeable by group, and
 readable by everyone else
-(j) change the directory permissions of dir1 to be inaccessible by group
-(k) find a new command, use man to provide a description and how to use it
+	chmod 124
 
+(j) change the directory permissions of dir1 to be inaccessible by group
+	chmod g+r dir1
+(k) find a new command, use man to provide a description and how to use it
+	man man
